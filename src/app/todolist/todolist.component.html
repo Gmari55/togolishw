@@ -1,0 +1,8 @@
+
+<div [class.iscomlete]='todoitem.iscomplete'>
+<span *ngIf="todoitem.iscomplete"><input type="checkbox" checked></span>
+<span *ngIf="!todoitem.iscomplete"><input type="checkbox"></span>
+<span *ngIf="todoitem.isimportant" class="important">!</span>
+<span [class.iscomletetext]='todoitem.iscomplete'>{{todoitem.text}}</span>
+<span> {{todoitem.deadline|date:'yyyy.dd.mM'}}</span>
+</div>
