@@ -15,6 +15,9 @@ export class TodolistComponent {
     text:'',
     deadline:new Date()
   } ;
+  changeStatus(item:Itodoitem):void{
+item.iscomplete=!item.iscomplete;
+  }
 }
 
 
